@@ -106,9 +106,8 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 3.7)
-  jekyll-paginate (~> 1.1)
-  jekyll-sitemap (~> 1.2)
+  jekyll-gist (~> 1.5)
   minimal-mistakes-jekyll
 
 BUNDLED WITH
-   2.0.1
+   1.16.0
