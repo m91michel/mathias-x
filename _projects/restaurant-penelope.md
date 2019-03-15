@@ -1,11 +1,11 @@
 ---
 title:  "Website for Restaurant-Penelope"
 header:
-#   image: /assets/images/foo-bar-identity.jpg
     teaser: "/assets/images/projects/penelope/teaser.jpg"
 sidebar:
   - title: "Role"
     image: "/assets/images/projects/penelope/teaser.jpg"
+    url: "http://google.de"
     image_alt: "Screenshot"
     text: "Designer, Front-End Developer"
   - title: "Responsibilities"
@@ -14,15 +14,15 @@ gallery:
   - url: "/assets/images/projects/penelope/header.jpg"
     image_path: "/assets/images/projects/penelope/header.jpg"
     alt: "Title Page"
-  - url: "/assets/images/projects/penelope/header.jpg"
-    image_path: "/assets/images/projects/penelope/header.jpg"
+  - url: "/assets/images/projects/penelope/speisekarte.jpg"
+    image_path: "/assets/images/projects/penelope/speisekarte.jpg"
     alt: "Menu"
-  - url: "/assets/images/projects/penelope/header.jpg"
-    image_path: "/assets/images/projects/penelope/header.jpg"
+  - url: "/assets/images/projects/penelope/kontakt.jpg"
+    image_path: "/assets/images/projects/penelope/kontakt.jpg"
     alt: "Contact"
 ---
 
-Restaurant-Penelope is a excellent greek Restaurant which is based in my home town Fürth. I helped them to decide which CMS they should use, choice a beautify theme and managed all content.
+[Restaurant-Penelope](https://restaurant-penelope.de/){:target="_blank"} is a excellent greek Restaurant which is based in my home town Fürth. I helped them to decide which CMS they should use, choice a beautify theme and managed all content.
 
 ## Responsibilities
 - Setup Wordpress
