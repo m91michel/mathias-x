@@ -14,7 +14,7 @@ title                    : "Mathias Michel"
 title_separator          : "|"
 name                     : "Mathias Michel"
 description              : "Mathias Michel - Personal Homepage and Blog"
-url                      : "http://mathias.rocks"
+url                      : "https://mathias.rocks"
 baseurl                  : # baseUrl
 repository               : m91michel/mathias-x
 teaser                   : "/assets/images/teaser-default.jpg"

@@ -1,7 +1,7 @@
 ---
 title:  "Retrospective Planner"
+published: false
 header:
-    # image: /assets/images/project-default.jpg
     teaser: "/assets/images/project-default.jpg"
 sidebar:
   - title: "Role"

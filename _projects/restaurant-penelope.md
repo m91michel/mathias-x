@@ -25,11 +25,10 @@ gallery:
 [Restaurant-Penelope](https://restaurant-penelope.de/){:target="_blank"} is a excellent greek Restaurant which is based in my home town Fürth. I helped them to decide which CMS they should use, choice a beautify theme and managed all content.
 
 ## Responsibilities
-- Setup Wordpress
-- Configure site
-- setup a theme add some customized, 
-- Plugins, 
-- analytics, 
-- content
+- Setup and configuration of Wordpress
+- Help with choice a nice theme and install these theme
+- Plugins for SEO
+- Setup Google Analytics
+- Insert content like pages and menu
 
 {% include gallery %}
