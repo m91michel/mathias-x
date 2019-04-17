@@ -13,7 +13,7 @@ locale                   : "en-US"
 title                    : "Mathias Michel"
 title_separator          : "|"
 name                     : "Mathias Michel"
-description              : "Mathias Michel - Personal Homepage and Blog"
+description              : "Personal Homepage and Blog of Mathias Michel"
 url                      : "https://mathias.rocks"
 baseurl                  : # baseUrl
 repository               : m91michel/mathias-x
@@ -34,7 +34,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "m91michel"
 facebook:
   username               :
   app_id                 :
@@ -59,30 +59,30 @@ analytics:
 author:
   name             : "Mathias Michel"
   avatar           : "/assets/images/about/mm-bio.jpg"
-  bio              : "Full Stack Software Developer | iOS and Web"
+  bio              : "Full Stack Software Developer wich loves iOS and web development"
   location         : "Munich | Germany"
-  email            : "contact@mathiasx.de"
+  email            : "contact@mathias.rocks"
   links:
-    - label: "Email"
+    - label: "contact@mathias.rocks"
       icon: "fas fa-fw fa-envelope-square"
       # url: mailto:contact@mathiasx.de
-    - label: "GitHub"
+    - label: "m91michel"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/m91michel"
-    - label: "Xing"
+    - label: "Xing Profile"
       icon: "fab fa-fw fa-xing"
       url: "https://www.xing.com/profile/Mathias_Michel4/"
-    - label: "Twitter"
+    - label: "@m91michel"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/m91michel"
-    - label: "Website"
+    - label: "mathias.rocks"
       icon: "fas fa-fw fa-link"
       url: "#"
 
 # Site Footer
 footer:
   links:
-    - label: "GitHub"
+    - label: ""
       icon: "fab fa-fw fa-github"
       url: "https://github.com/m91michel"
 
