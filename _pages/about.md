@@ -5,7 +5,7 @@ classes: wide
 ---
 
 ![Mathias in the mountains](/assets/images/about/mm-alpen.jpg){: .align-right}
-Hi there! My name is Mathias Michel and I am a Software Developer specialized to Mobile and Web Frontend development. I hold a Bachelor of Computer Science & Media from Technical University Nuremberg and I am working at [Jambit GmbH] since 2017.
+Hi there! My name is Mathias Michel and I am a Software Developer specialized to Mobile and Web Frontend development. I hold a Bachelor of Computer Science & Media from Technical University Nuremberg and I am working at [Jambit GmbH]{:target="_blank"} since 2017.
 
 Despite traveling the world and going to the gym I am interested in Cryptocurrencies and I am interested in personal investment Stocks, ETFs, P2P Credits. I love details in products which you can find for example in Apple products.
 
