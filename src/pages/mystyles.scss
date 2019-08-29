@@ -1,0 +1,47 @@
+@charset "utf-8";
+// If need, change your variables before importing Bulma
+
+@import "~bulma/bulma.sass";
+
+// VARIABLES
+$primary-color: #2980b9;
+$secondary-color: #6dd5fa;
+
+.gradientBg {
+	display: flex;
+	background: linear-gradient(to right, $primary-color, $secondary-color);
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer {
+	display: flex;
+	padding: 1.5rem 1.5rem;
+	line-height: 1.5rem;
+	a {
+		border-bottom: 1px solid;
+		color: black;
+	}
+	a:hover {
+		color: $secondary-color;
+	}
+}
+
+.content {
+    max-width: 956px;
+    margin: 0 auto;
+}
+
+.social-button {
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    border: solid 1px $body-color;
+    color:  $body-color;
+}
