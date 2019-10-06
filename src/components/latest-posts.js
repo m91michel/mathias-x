@@ -1,0 +1,73 @@
+import React from "react"
+import { StaticQuery, graphql } from "gatsby"
+import styled from "styled-components"
+import PostTile from "./post-tile"
+
+function LatestPosts() {
+  return (
+    <StaticQuery
+      query={latestPostQuery}
+      render={data => {
+        const posts = data.allMarkdownRemark.edges
+
+        return (
+          <Main>
+            <section className="container content">
+              <div className="has-text-centered">
+                <h1 className="title">Latest posts</h1>
+              </div>
+              <div style={{ margin: "20px 0 40px" }}>
+                {posts.map(({ node }) => {
+                  const title = node.frontmatter.title || node.fields.slug
+                  return (
+                    <PostTile
+                      key={node.fields.slug}
+                      title={title}
+                      link={`/blog${node.fields.slug}`}
+                      description={node.frontmatter.description}
+                      excerpt={node.excerpt}
+                      date={node.frontmatter.date}
+                      timeToRead={node.timeToRead}
+                    />
+                  )
+                })}
+              </div>
+            </section>
+          </Main>
+        )
+      }}
+    />
+  )
+}
+
+export const latestPostQuery = graphql`
+  query {
+    allMarkdownRemark(
+      limit: 3
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { fields: { collection: { eq: "blog" } } }
+    ) {
+      edges {
+        node {
+          excerpt
+          timeToRead
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+          }
+        }
+      }
+    }
+  }
+`
+
+const Main = styled.main`
+  max-width: 1024px;
+  margin: 0 auto;
+`
+
+export default LatestPosts
