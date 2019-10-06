@@ -1,15 +1,17 @@
-import React from "react"
+import React, {useState} from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
 const NavLinks = [
-    {name: 'Home', to: '/'},
-    {name: 'Blog', to: '/blog/'},
-    {name: 'About', to: '/about/'},
-    {name: 'Contact', to: '/contact/'},
+  { name: "Home", to: "/" },
+  { name: "Blog", to: "/blog/" },
+  { name: "About", to: "/about/" },
+  { name: "Contact", to: "/contact/" },
 ]
 
 const Navigation = () => {
+    const [isExpanded, toggleExpansion] = useState(false)
+
   return (
     <StaticQuery
       query={navQuery}
@@ -22,24 +24,35 @@ const Navigation = () => {
             role="navigation"
             aria-label="main navigation"
           >
-            <div className="navbar-brand">
-              <Link className="navbar-item" to={`/`}>
-                <Image
-                  fixed={data.logo.childImageSharp.fixed}
-                  objectFit="scale-down"
-                  alt={"Logo" + author}
-                />
-                <h1 style={{ marginLeft: `5px` }}>{author}</h1>
-              </Link>
-            </div>
+            <div className="container">
+              <div className="navbar-brand">
+                <Link className="navbar-item" to={`/`}>
+                  <Image
+                    fixed={data.logo.childImageSharp.fixed}
+                    objectFit="scale-down"
+                    alt={"Logo" + author}
+                  />
+                  <h1 style={{ marginLeft: `5px` }}>{author}</h1>
+                </Link>
+                <span
+                  className={`navbar-burger burger ${ isExpanded ? `is-active` : `` }`}
+                  data-target="navbarMenuHeroB"
+                  onClick={() => toggleExpansion(!isExpanded)}
+                >
+                  <span />
+                  <span />
+                  <span />
+                </span>
+              </div>
 
-            <div id="navbarBasicExample" className="navbar-menu">
-              <div className="navbar-end">
+              <div id="navbarBasicExample" className={`navbar-menu ${ isExpanded ? `is-active` : `` }`}>
+                <div className="navbar-end">
                   {NavLinks.map(item => (
-                      <Link key={item.name} className="navbar-item" to={item.to}>
+                    <Link key={item.name} className="navbar-item" to={item.to} activeClassName="is-active">
                       {item.name}
                     </Link>
                   ))}
+                </div>
               </div>
             </div>
           </nav>

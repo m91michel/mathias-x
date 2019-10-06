@@ -6,10 +6,9 @@ import SEO from "../components/seo"
 class PageTemplate extends React.Component {
   render() {
     const page = this.props.data.markdownRemark
-    const subtitle = page.frontmatter.subline || ''
 
     return (
-      <Layout title={page.frontmatter.title} subtitle={subtitle}>
+      <Layout title={page.frontmatter.title}>
         <SEO
           title={page.frontmatter.title}
           description={page.frontmatter.description || ''}
@@ -28,7 +27,6 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        subline
         description
       }
     }

@@ -1,6 +1,5 @@
-import React from "react"
+import React, { Fragment } from "react"
 import { StaticQuery, graphql } from "gatsby"
-import Layout from "../components/layout"
 import Image from "gatsby-image"
 import SEO from "../components/seo"
 import "./mystyles.scss"
@@ -12,6 +11,9 @@ import {
   faXing,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons"
+import Navigation from "../components/navigation";
+import Footer from "../components/footer";
+import LatestPosts from "../components/latest-posts"
 
 const socialButtons = [
   {
@@ -44,7 +46,7 @@ class IndexPage extends React.Component {
         render={data => {
           const { author, social, bio } = data.site.siteMetadata
           return (
-            <Layout>
+            <Fragment>
               <SEO
                 title="Home"
                 keywords={[
@@ -57,41 +59,51 @@ class IndexPage extends React.Component {
                   `react`,
                 ]}
               />
-              <section className="hero">
-                <div className="hero-body">
-                  <div className="container">
-                    <div className="media-content">
-                      <div className="content has-text-centered">
-                        <Image
-                          fixed={data.avatar.childImageSharp.fixed}
-                          alt={author}
-                          imgStyle={{
-                            borderRadius: `50%`,
-                          }}
-                        />
-                        <h1 className="is-uppercase is-size-2">{author}</h1>
-                        <p>{bio}</p>
-                        <div>
-                          {socialButtons.map(socialItem => (
-                            <a
-                              key={socialItem.id}
-                              href={social[socialItem.id]}
-                            >
-                              <span className="icon social-button">
-                                <FontAwesomeIcon
-                                  icon={socialItem.icon}
-                                  size="1x"
-                                />
-                              </span>
-                            </a>
-                          ))}
+              <header>
+                <section className="hero is-info is-medium is-bold">
+                <div className="hero-head">
+                    <Navigation />
+                </div>
+
+                  <div className="hero-body">
+                    <div className="container">
+                      <div className="media-content">
+                        <div className="content has-text-centered">
+                          <Image
+                            fixed={data.avatar.childImageSharp.fixed}
+                            alt={author}
+                            imgStyle={{
+                              borderRadius: `50%`,
+                            }}
+                          />
+                          <h1 className="title is-uppercase is-size-2">{author}</h1>
+                          <p>{bio}</p>
+                          <div className="subtitle">
+                            {socialButtons.map(socialItem => (
+                              <a
+                                key={socialItem.id}
+                                href={social[socialItem.id]}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <span className="icon social-button">
+                                  <FontAwesomeIcon
+                                    icon={socialItem.icon}
+                                    size="1x"
+                                  />
+                                </span>
+                              </a>
+                            ))}
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </section>
-            </Layout>
+                </section>
+              </header>
+              <LatestPosts />
+              <Footer />
+            </Fragment>
           )
         }}
       />

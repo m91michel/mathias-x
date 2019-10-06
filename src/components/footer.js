@@ -9,20 +9,16 @@ const Container = styled.footer`
 
 const Footer = () => (
   <Container>
-      <div>
-        Mathias Michel © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </div>
-      <div>
-      <Link to='/imprint'>
-            Imprint            
-        </Link>
-        {' & '}
-        <Link to='/privacy'>
-            Privacy            
-        </Link>
-      </div>
+    <div>
+      Mathias Michel © {new Date().getFullYear()}, Built with
+      {` `}
+      <a href="https://www.gatsbyjs.org">Gatsby</a>
+    </div>
+    <div>
+      <Link to="/imprint">Imprint</Link>
+      {" | "}
+      <Link to="/">Feed</Link>
+    </div>
   </Container>
 )
 export default Footer
