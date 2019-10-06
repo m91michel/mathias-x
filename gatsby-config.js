@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Mathias first Gatsby blog`,
+    title: `Mathias Michel`,
     author: `Mathias Michel`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Personal Homepage of Mathias Michel.`,
     siteUrl: `https://netlify.com/`,
     bio: `iOS & Web Developer working at @jambit | Interested in Tech, Blockchain, finance & politics`,
     social: {
