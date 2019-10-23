@@ -26,7 +26,7 @@ class Layout extends React.Component {
                 <header>{header}</header>
                 <Wrapper>
                     <section>
-                    <div className="container content">{children}</div>
+                        <div className="container content">{children}</div>
                     </section>
                 </Wrapper>
                 <Footer />
@@ -39,6 +39,10 @@ const Wrapper = styled.main`
   min-height: 50vh;
   max-width: 1024px;
   margin: 0 auto;
+
+  @media(max-width: 1024px) {
+      padding: 0 20px;
+  }
 `
 
 export default Layout
