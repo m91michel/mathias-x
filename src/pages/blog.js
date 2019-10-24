@@ -8,7 +8,6 @@ import PostTile from "../components/post-tile"
 class Blog extends React.Component {
   render() {
     const { data } = this.props
-    // const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
 
     return (
@@ -40,11 +39,6 @@ export default Blog
 
 export const pageQuery = graphql`
   query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { fields: { collection: { eq: "blog" } } }
