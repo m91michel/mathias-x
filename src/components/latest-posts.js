@@ -2,7 +2,9 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import PostTile from "./post-tile"
-
+const titleStyle = {
+    marginTop: '2em'
+}
 function LatestPosts() {
   return (
     <StaticQuery
@@ -13,7 +15,7 @@ function LatestPosts() {
         return (
           <Main>
             <section className="container content">
-              <div className="has-text-centered">
+              <div className="has-text-centered" style={titleStyle}>
                 <h1 className="title">Latest posts</h1>
               </div>
               <div style={{ margin: "20px 0 40px" }}>
