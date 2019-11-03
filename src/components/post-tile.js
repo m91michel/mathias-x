@@ -3,19 +3,14 @@ import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faClock } from "@fortawesome/free-solid-svg-icons"
 
-const PostTile = ({ title, link, description, excerpt, date, timeToRead }) => {
+const PostTile = ({ title, link, date, timeToRead }) => {
   return (
     <Fragment>
       <div className="column">
         <article className="box has-text-centered">
           <Link to={link}>
-            <p className="title">{title}</p>
+            <h2 className="title">{title}</h2>
           </Link>
-          <p
-            dangerouslySetInnerHTML={{
-              __html: description || excerpt,
-            }}
-          />
           <p>
             {date} -{" "}
             <small>

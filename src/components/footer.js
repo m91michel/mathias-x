@@ -16,8 +16,6 @@ const Footer = () => (
     </div>
     <div>
       <Link to="/imprint">Imprint</Link>
-      {" | "}
-      <Link to="/">Feed</Link>
     </div>
   </Container>
 )
