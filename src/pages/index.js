@@ -13,28 +13,25 @@ import {
 } from "@fortawesome/free-brands-svg-icons"
 import Navigation from "../components/navigation";
 import Footer from "../components/footer";
-import LatestPosts from "../components/latest-posts"
+import LatestPosts from "../components/latest-posts";
+import ValuesAndPrinciples from "../components/values-and-principles";
 
 const socialButtons = [
   {
     id: "twitter",
     icon: faTwitter,
-    baseUrl: "https://twitter.com/",
   },
   {
     id: "github",
     icon: faGithub,
-    baseUrl: "https://github.com/",
   },
   {
     id: "xing",
     icon: faXing,
-    baseUrl: "https://xing.com/",
   },
   {
     id: "linkedIn",
     icon: faLinkedin,
-    baseUrl: "https://linkedin.com/",
   },
 ]
 
@@ -102,6 +99,7 @@ class IndexPage extends React.Component {
                 </section>
               </header>
               <LatestPosts />
+              <ValuesAndPrinciples />
               <Footer />
             </Fragment>
           )
