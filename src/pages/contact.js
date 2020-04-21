@@ -41,13 +41,13 @@ export default function Contact() {
           <lu>
             <li>
               Twitter:{" "}
-              <a href="https://twitter.com/m91michel" target="_blank">
+              <a href="https://twitter.com/m91michel" target="_blank" rel="noopener noreferrer">
                 m91michel
               </a>
             </li>
             <li>
               GitHub:{" "}
-              <a href="https://github.com/m91michel" target="_blank">
+              <a href="https://github.com/m91michel" target="_blank" rel="noopener noreferrer">
                 m91michel
               </a>
             </li>
@@ -56,6 +56,7 @@ export default function Contact() {
               <a
                 href="https://www.xing.com/profile/Mathias_Michel4/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Mathias Michel
               </a>
@@ -65,6 +66,7 @@ export default function Contact() {
               <a
                 href="https://www.linkedin.com/in/mathias-michel-b07b6557/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Mathias Michel
               </a>

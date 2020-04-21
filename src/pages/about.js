@@ -13,9 +13,8 @@ const SplitContainer = styled.div`
 const TextContainer = styled.div`
   @media (min-width: 768px) {
     flex: 2;
-  padding-right: 20px;
+    padding-right: 20px;
   }
-
 `;
 const ImageContainer = styled.div`
   flex: 1;
@@ -32,10 +31,7 @@ class PageTemplate extends React.Component {
         render={data => {
           return (
             <Layout title="About Me">
-              <SEO
-                title={"About Mathias"}
-                description={"About me"}
-              />
+              <SEO title={"About Mathias"} description={"About me"} />
               <SplitContainer>
                 <TextContainer>
                   <p>

@@ -1,6 +1,5 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import styled from "styled-components"
 import PostTile from "./post-tile"
 const titleStyle = {
     marginTop: '2em'
@@ -13,7 +12,6 @@ function LatestPosts() {
         const posts = data.allMarkdownRemark.edges
 
         return (
-          <Main>
             <section className="container content">
               <div className="has-text-centered" style={titleStyle}>
                 <h1 className="title">Latest posts</h1>
@@ -35,7 +33,6 @@ function LatestPosts() {
                 })}
               </div>
             </section>
-          </Main>
         )
       }}
     />
@@ -65,11 +62,6 @@ export const latestPostQuery = graphql`
       }
     }
   }
-`
-
-const Main = styled.main`
-  max-width: 1024px;
-  margin: 0 auto;
 `
 
 export default LatestPosts
