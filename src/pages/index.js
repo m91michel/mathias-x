@@ -76,8 +76,8 @@ class IndexPage extends React.Component {
                               borderRadius: `50%`,
                             }}
                           />
-                          <h1 className="title is-uppercase is-size-2">{author}</h1>
-                          <p>{bio}</p>
+                          <h1 className="title is-uppercase is-spaced is-2">{author}</h1>
+                          <h2 className="subtitle">{bio}</h2>
                           <div className="subtitle">
                             {socialButtons.map(socialItem => (
                               <a
