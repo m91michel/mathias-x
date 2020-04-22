@@ -32,7 +32,7 @@ const Navigation = () => {
                     objectFit="scale-down"
                     alt={"Logo" + author}
                   />
-                  <h1 style={{ marginLeft: `5px` }}>{author}</h1>
+                  <h1 className="has-text-weight-bold" style={{ marginLeft: `5px` }}>{author}</h1>
                 </Link>
                 <span
                   className={`navbar-burger burger ${ isExpanded ? `is-active` : `` }`}
