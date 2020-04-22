@@ -39,9 +39,7 @@ class HeaderHero extends React.Component {
           const { author, social, bio } = data.site.siteMetadata;
           return (
             <header className="hero is-info is-medium is-bold">
-              <div className="hero-head">
-                <Navigation />
-              </div>
+            <Navigation />
 
               <div className="hero-body">
                 <div className="container">

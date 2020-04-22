@@ -19,6 +19,7 @@ const Navigation = () => {
         const { author } = data.site.siteMetadata
 
         return (
+          <div className="hero-head">
           <nav
             className="navbar"
             role="navigation"
@@ -56,6 +57,7 @@ const Navigation = () => {
               </div>
             </div>
           </nav>
+          </div>
         )
       }}
     />

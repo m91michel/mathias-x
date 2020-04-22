@@ -36,8 +36,8 @@ export default function Contact() {
   return (
     <Layout title={siteTitle}>
       <SEO title={siteTitle} />
-      <div class="columns">
-        <div class="column is-one-third">
+      <div className="columns">
+        <div className="column is-one-third">
           <lu>
             <li>
               Twitter:{" "}
@@ -73,7 +73,7 @@ export default function Contact() {
             </li>
           </lu>
         </div>
-        <div class="column">
+        <div className="column">
           <form
             name="contact"
             method="post"

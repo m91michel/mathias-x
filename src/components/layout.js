@@ -8,10 +8,8 @@ class Layout extends React.Component {
   render() {
     const { title, subtitle, children } = this.props;
     let header = (
-      <section className="hero">
-        <div className="hero-head">
-          <Navigation />
-        </div>
+      <header className="hero">
+        <Navigation />
 
         <div className="hero-body">
           <div className="container has-text-centered">
@@ -19,7 +17,7 @@ class Layout extends React.Component {
             {subtitle && <h2 className="subtitle">{subtitle}</h2>}
           </div>
         </div>
-      </section>
+      </header>
     );
     return (
       <Fragment>
