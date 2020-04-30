@@ -3,7 +3,7 @@ title: My Book Reading List
 date: "2020-03-13"
 ---
 
-This blog post is updated regularly and contains a list of books I have read and books that are still on my todo list.
+This blog post is updated regularly and contains a list of books I have already read or books that are on my todo list.
 
 ## Books that I have read
 - [Rich Dad Poor Dad - Robert T. Kiyosaki](https://www.amazon.de/-/en/Rich-Dad-Poor-Teach-Middle/dp/1612680194/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1587291564&sr=1-2)
