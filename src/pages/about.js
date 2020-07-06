@@ -33,7 +33,7 @@ class PageTemplate extends React.Component {
           const description = `Hi there! My name is Mathias Michel and I am a Software
           Developer specialized to Mobile and Web Frontend
           development.`;
-          const title = "About Mathias Michel"
+          const title = "About"
           return (
             <Layout title="Who I am?">
               <SEO title={title} description={description} />

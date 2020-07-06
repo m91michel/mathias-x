@@ -12,7 +12,7 @@ class Blog extends React.Component {
 
     return (
       <Layout title="Latest Posts">
-        <SEO title="All posts" />
+        <SEO title="Blog" />
         <div style={{ margin: "20px 0 40px" }}>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
