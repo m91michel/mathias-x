@@ -9,7 +9,7 @@ Veit-Stoß-Straße 25<br>
 80687 München
 
 #### Kontakt:
-Telefon: 0174 317 40 78<br>
+Telefon: 0151 6511 3187<br>
 E-Mail: <a href='mailto:contact@mathias.rocks'>contact@mathias.rocks</a></br></p>
 
 #### Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:

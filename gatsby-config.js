@@ -3,8 +3,8 @@ module.exports = {
     title: `Mathias Michel`,
     author: `Mathias Michel`,
     description: `Personal Homepage of Mathias Michel.`,
-    siteUrl: `https://netlify.com/`,
-    bio: `iOS & Web Developer working at @jambit | Interested in Tech, Blockchain, finance & politics`,
+    siteUrl: `https://mathias.rocks`,
+    bio: `Fullstack and iOS Developer | Interested in Tech, Blockchain, finance & politics`,
     social: {
       twitter: `https://twitter.com/m91michel`,
       github: `https://github.com/m91michel`,
@@ -75,8 +75,8 @@ module.exports = {
     {
         resolve: `gatsby-plugin-manifest`,
         options: {
-          name: `Mathias first Gatsby blog`,
-          short_name: `Mathias Michel`,
+          name: `Mathias.rocks`,
+          short_name: `Mathias.rocks`,
           start_url: `/`,
           background_color: `#ffffff`,
           theme_color: `#663399`,

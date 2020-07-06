@@ -28,19 +28,24 @@ class PageTemplate extends React.Component {
     return (
       <StaticQuery
         query={aboutQuery}
-        render={data => {
+        render={(data) => {
+          const { social } = data.site.siteMetadata;
+          const description = `Hi there! My name is Mathias Michel and I am a Software
+          Developer specialized to Mobile and Web Frontend
+          development.`;
+          const title = "About Mathias Michel"
           return (
-            <Layout title="About Me">
-              <SEO title={"About Mathias"} description={"About me"} />
+            <Layout title="Who I am?">
+              <SEO title={title} description={description} />
               <SplitContainer>
                 <TextContainer>
                   <p>
                     Hi there! My name is Mathias Michel and I am a Software
                     Developer specialized to Mobile and Web Frontend
                     development. I hold a Bachelor of Computer Science &amp;
-                    Media from Technical University Nuremberg and I am working
-                    at <a href="http://www.jambit.com">Jambit GmbH</a> since
-                    2017.
+                    Media from Technical University Nuremberg and I worked for{" "}
+                    <a href="https://www.jambit.com" target="_blank" rel="noopener noreferrer">Jambit GmbH</a> for three
+                    years. I am now looking forward to new challenges.
                   </p>
                   <p>
                     Despite traveling the world and going to the gym I am
@@ -49,9 +54,9 @@ class PageTemplate extends React.Component {
                     products which you can find for example in Apple products.
                   </p>
                   <p>
-                    If you have feedback, questions, or want to contact me? Feel
-                    free and <a href="/contact/">contact me</a> or find me on
-                    Github, StackOverflow, and elsewhere around the web.
+                    If you have feedback, questions, or just want to contact me?
+                    You can use the <a href="/contact/">contact form</a> or you
+                    can find me on <a href={social.github}>Github</a>, <a href={social.linkedIn}>LinkedIn</a> or <a href={social.xing}>Xing</a>
                   </p>
                 </TextContainer>
                 <ImageContainer>
@@ -77,6 +82,16 @@ const aboutQuery = graphql`
       childImageSharp {
         fixed(width: 300, height: 400) {
           ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    site {
+      siteMetadata {
+        social {
+          twitter
+          github
+          xing
+          linkedIn
         }
       }
     }
