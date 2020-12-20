@@ -22,10 +22,16 @@ const projects = [
     description:
       "I set up the website with Wordpress and provide technical support.",
   },
+  {
+    title: "Personal Wiki",
+    link: "https://m91michel.github.io/knowledge/",
+    description:
+      "A personal wiki for myself, where I collect interesting information.",
+  },
 ];
 
 const Projects = () => {
-  const siteTitle = "Projects";
+  const siteTitle = "Side Projects";
 
   return (
     <Layout title={siteTitle}>
