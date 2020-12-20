@@ -9,7 +9,7 @@ import {
   faXing,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import Navigation from "../components/navigation";
+import Navigation from "../layout/navigation";
 
 const socialButtons = [
   {

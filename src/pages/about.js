@@ -2,8 +2,8 @@ import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import Image from "gatsby-image";
 import styled from "styled-components";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from "../components/layout/layout";
+import SEO from "../components/layout/seo";
 
 const SplitContainer = styled.div`
   @media (min-width: 768px) {

@@ -1,6 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import PostTile from "./post-tile"
+import PostTile from "../post-tile"
 const titleStyle = {
     marginTop: '2em'
 }

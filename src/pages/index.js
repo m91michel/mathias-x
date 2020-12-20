@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
-import SEO from "../components/seo";
+import SEO from "../components/layout/seo";
 import "./mystyles.scss";
-import Footer from "../components/footer";
-import LatestPosts from "../components/latest-posts";
-import HeaderHero from "../components/header-hero";
+import Footer from "../components/layout/footer";
+import LatestPosts from "../components/home/latest-posts";
+import HeaderHero from "../components/home/header-hero";
 
 class IndexPage extends React.Component {
   render() {
