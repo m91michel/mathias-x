@@ -3,7 +3,14 @@ import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faClock } from "@fortawesome/free-solid-svg-icons"
 
-const PostTile = ({ title, link, date, timeToRead }) => {
+type Props = {
+  title: string;
+  link: string;
+  date: string;
+  timeToRead: string;
+}
+
+const PostTile = ({ title, link, date, timeToRead }: Props) => {
   return (
     <Fragment>
       <div className="column">
