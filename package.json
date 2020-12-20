@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-personal-starter-blog",
+  "name": "mathias-rocks",
   "private": true,
   "description": "A personal blog starter for a blog powered by Netlify CMS, based on the default blog starter",
   "version": "0.1.0",
-  "author": "Thomas Wang <thomas@wang.sh>",
+  "author": "Mathias Michel",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
@@ -13,7 +13,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.10.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "babel-plugin-styled-components": "^1.10.0",
-    "bulma": "^0.7.5",
+    "bulma": "^0.9.2",
     "gatsby": "^2.29.1",
     "gatsby-image": "^2.8.0",
     "gatsby-plugin-feed": "^2.10.0",
