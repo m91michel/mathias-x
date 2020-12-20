@@ -5,18 +5,18 @@ import SEO from "../components/layout/seo";
 
 function encode(data) {
   return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
     .join("&");
 }
 
 export default function Contact() {
   const [state, setState] = React.useState({});
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
     fetch("/", {
@@ -28,7 +28,7 @@ export default function Contact() {
       }),
     })
       .then(() => navigate(form.getAttribute("action")))
-      .catch(error => alert(error));
+      .catch((error) => alert(error));
   };
 
   const siteTitle = "Contact";
@@ -41,13 +41,21 @@ export default function Contact() {
           <lu>
             <li>
               Twitter:{" "}
-              <a href="https://twitter.com/m91michel" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://twitter.com/m91michel"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 m91michel
               </a>
             </li>
             <li>
               GitHub:{" "}
-              <a href="https://github.com/m91michel" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/m91michel"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 m91michel
               </a>
             </li>
@@ -82,41 +90,47 @@ export default function Contact() {
             onSubmit={handleSubmit}
           >
             <div className="field">
-              <label className="label">Name</label>
-              <div className="control">
-                <input
-                  className="input"
-                  name="name"
-                  type="text"
-                  onChange={handleChange}
-                  placeholder="Whats your name?"
-                />
-              </div>
+              <label className="label">
+                Name
+                <div className="control">
+                  <input
+                    className="input"
+                    name="name"
+                    type="text"
+                    onChange={handleChange}
+                    placeholder="Whats your name?"
+                  />
+                </div>
+              </label>
             </div>
 
             <div className="field">
-              <label className="label">Email</label>
-              <div className="control">
-                <input
-                  className="input"
-                  name="email"
-                  type="email"
-                  onChange={handleChange}
-                  placeholder="Where can I reply?"
-                />
-              </div>
+              <label className="label">
+                Email
+                <div className="control">
+                  <input
+                    className="input"
+                    name="email"
+                    type="email"
+                    onChange={handleChange}
+                    placeholder="Where can I reply?"
+                  />
+                </div>
+              </label>
             </div>
 
             <div className="field">
-              <label className="label">Message</label>
-              <div className="control">
-                <textarea
-                  className="textarea"
-                  name="message"
-                  onChange={handleChange}
-                  placeholder="Textarea"
-                />
-              </div>
+              <label className="label">
+                Message
+                <div className="control">
+                  <textarea
+                    className="textarea"
+                    name="message"
+                    onChange={handleChange}
+                    placeholder="Textarea"
+                  />
+                </div>
+              </label>
             </div>
 
             <input type="hidden" name="form-name" value="contact" />
