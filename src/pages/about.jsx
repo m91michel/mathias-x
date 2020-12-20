@@ -4,6 +4,7 @@ import Image from "gatsby-image";
 import styled from "styled-components";
 import Layout from "../components/layout/layout";
 import SEO from "../components/layout/seo";
+import Link from "../components/general/Link";
 
 const SplitContainer = styled.div`
   @media (min-width: 768px) {
@@ -44,8 +45,8 @@ class PageTemplate extends React.Component {
                     Developer specialized to Mobile and Web Frontend
                     development. I hold a Bachelor of Computer Science &amp;
                     Media from Technical University Nuremberg and I worked for{" "}
-                    <a href="https://www.jambit.com" target="_blank" rel="noopener noreferrer">Jambit GmbH</a> for three
-                    years. I am now looking forward to new challenges.
+                    <Link href="https://www.jambit.com">Jambit GmbH</Link> for three
+                    years. I am now working for <Link href="https://www.klarx.de">Klarx</Link>.
                   </p>
                   <p>
                     Despite traveling the world and going to the gym I am
