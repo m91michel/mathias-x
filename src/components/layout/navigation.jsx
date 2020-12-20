@@ -36,7 +36,7 @@ const Navigation = () => {
                   />
                   <h1 className="has-text-weight-bold" style={{ marginLeft: `5px` }}>{author}</h1>
                 </Link>
-                <span
+                <button
                   className={`navbar-burger burger ${ isExpanded ? `is-active` : `` }`}
                   data-target="navbarMenuHeroB"
                   onClick={() => toggleExpansion(!isExpanded)}
@@ -44,7 +44,7 @@ const Navigation = () => {
                   <span />
                   <span />
                   <span />
-                </span>
+                </button>
               </div>
 
               <div id="navbarBasicExample" className={`navbar-menu ${ isExpanded ? `is-active` : `` }`}>
