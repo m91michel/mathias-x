@@ -36,6 +36,12 @@ $secondary-color: #6dd5fa;
     margin: 0 auto;
 }
 
+.unset-button {
+	background-color: unset;
+	border: unset;
+	outline: unset;
+}
+
 .social-button {
     padding: 20px;
     margin: 5px;

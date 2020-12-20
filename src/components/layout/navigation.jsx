@@ -1,6 +1,6 @@
-import React, {useState} from "react"
-import { Link, StaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
+import React, { useState } from "react";
+import { Link, StaticQuery, graphql } from "gatsby";
+import Image from "gatsby-image";
 
 const NavLinks = [
   { name: "Home", to: "/" },
@@ -8,62 +8,77 @@ const NavLinks = [
   { name: "About", to: "/about/" },
   { name: "Projects", to: "/projects/" },
   { name: "Contact", to: "/contact/" },
-]
+];
 
 const Navigation = () => {
-    const [isExpanded, toggleExpansion] = useState(false)
+  const [isExpanded, toggleExpansion] = useState(false);
 
   return (
     <StaticQuery
       query={navQuery}
-      render={data => {
-        const { author } = data.site.siteMetadata
+      render={(data) => {
+        const { author } = data.site.siteMetadata;
 
         return (
           <div className="hero-head">
-          <nav
-            className="navbar"
-            role="navigation"
-            aria-label="main navigation"
-          >
-            <div className="container">
-              <div className="navbar-brand">
-                <Link className="navbar-item" to={`/`}>
-                  <Image
-                    fixed={data.logo.childImageSharp.fixed}
-                    objectFit="scale-down"
-                    alt={"Logo" + author}
-                  />
-                  <h1 className="has-text-weight-bold" style={{ marginLeft: `5px` }}>{author}</h1>
-                </Link>
-                <button
-                  className={`navbar-burger burger ${ isExpanded ? `is-active` : `` }`}
-                  data-target="navbarMenuHeroB"
-                  onClick={() => toggleExpansion(!isExpanded)}
-                >
-                  <span />
-                  <span />
-                  <span />
-                </button>
-              </div>
+            <nav
+              className="navbar"
+              role="navigation"
+              aria-label="main navigation"
+            >
+              <div className="container">
+                <div className="navbar-brand">
+                  <Link className="navbar-item" to={`/`}>
+                    <Image
+                      fixed={data.logo.childImageSharp.fixed}
+                      objectFit="scale-down"
+                      alt={"Logo" + author}
+                    />
+                    <h3
+                      className="has-text-weight-bold"
+                      style={{ marginLeft: `5px` }}
+                    >
+                      {author}
+                    </h3>
+                  </Link>
+                  <button
+                    className={`navbar-burger unset-button burger ${
+                      isExpanded ? `is-active` : ``
+                    }`}
+                    data-target="navbarMenuHeroB"
+                    onClick={() => toggleExpansion(!isExpanded)}
+                  >
+                    <span />
+                    <span />
+                    <span />
+                  </button>
+                </div>
 
-              <div id="navbarBasicExample" className={`navbar-menu ${ isExpanded ? `is-active` : `` }`}>
-                <div className="navbar-end">
-                  {NavLinks.map(item => (
-                    <Link key={item.name} className="navbar-item" to={item.to} activeClassName="is-active">
-                      {item.name}
-                    </Link>
-                  ))}
+                <div
+                  id="navbarBasicExample"
+                  className={`navbar-menu ${isExpanded ? `is-active` : ``}`}
+                >
+                  <div className="navbar-end">
+                    {NavLinks.map((item) => (
+                      <Link
+                        key={item.name}
+                        className="navbar-item"
+                        to={item.to}
+                        activeClassName="is-active"
+                      >
+                        {item.name}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
-          </nav>
+            </nav>
           </div>
-        )
+        );
       }}
     />
-  )
-}
+  );
+};
 
 const navQuery = graphql`
   query NavQuery {
@@ -83,5 +98,5 @@ const navQuery = graphql`
       }
     }
   }
-`
-export default Navigation
+`;
+export default Navigation;
