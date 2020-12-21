@@ -1,24 +1,29 @@
-import React, { Fragment } from "react";
+import React, { Fragment, ReactNode } from "react";
 import styled from "styled-components";
 
 import Navigation from "./navigation";
 import Footer from "./footer";
 
-class Layout extends React.Component {
-  render() {
-    const { title, subtitle, children } = this.props;
-    let header = (
-      <header className="hero">
-        <Navigation />
+type Props = {
+  title: string;
+  subtitle?: string;
+  children: ReactNode;
+}
 
-        <div className="hero-body">
-          <div className="container has-text-centered">
-            <h1 className="title">{title}</h1>
-            {subtitle && <h2 className="subtitle">{subtitle}</h2>}
-          </div>
+const Layout: React.FC<Props> = ({ title, subtitle, children }) => {
+  let header = (
+    <header className="hero">
+      <Navigation />
+
+      <div className="hero-body">
+        <div className="container has-text-centered">
+          <h1 className="title">{title}</h1>
+          {subtitle && <h2 className="subtitle">{subtitle}</h2>}
         </div>
-      </header>
-    );
+      </div>
+    </header>
+  );
+
     return (
       <Fragment>
         <header>{header}</header>
@@ -30,7 +35,6 @@ class Layout extends React.Component {
         <Footer />
       </Fragment>
     );
-  }
 }
 
 const Wrapper = styled.main`

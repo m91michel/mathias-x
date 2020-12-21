@@ -4,9 +4,11 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout/layout"
 import SEO from "../components/layout/seo"
 
-class NotFoundPage extends React.Component {
-  render() {
-    const { data } = this.props
+type Props = {
+  data: any;
+}
+
+const NotFoundPage: React.FC<Props> = ({ data }) => {
     const siteTitle = data.site.siteMetadata.title
 
     return (
@@ -16,7 +18,6 @@ class NotFoundPage extends React.Component {
         <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
       </Layout>
     )
-  }
 }
 
 export default NotFoundPage

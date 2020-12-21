@@ -10,7 +10,7 @@ const NavLinks = [
   { name: "Contact", to: "/contact/" },
 ];
 
-const Navigation = () => {
+const Navigation: React.FC = () => {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
@@ -31,7 +31,7 @@ const Navigation = () => {
                   <Link className="navbar-item" to={`/`}>
                     <Image
                       fixed={data.logo.childImageSharp.fixed}
-                      objectFit="scale-down"
+                      // objectFit="scale-down"
                       alt={"Logo" + author}
                     />
                     <h3
