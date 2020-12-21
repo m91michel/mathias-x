@@ -5,10 +5,29 @@ import Bio from "../components/bio"
 import Layout from "../components/layout/layout"
 import SEO from "../components/layout/seo"
 
-class BlogPostTemplate extends React.Component {
-  render() {
-    const post = this.props.data.markdownRemark
-    const { previous, next } = this.props.pageContext
+interface Props {
+  data: {
+    markdownRemark: {
+      id: string;
+      excerpt: string;
+      html: string;
+      frontmatter: {
+        title: string;
+        date: string;
+        description: string;
+      }
+    }
+    site: {
+      siteMetadata: {
+        title: string;
+      }
+    }
+  }
+  pageContext: any
+}
+const BlogPostTemplate: React.FC<Props> = (props) => {
+    const post = props.data.markdownRemark
+    const { previous, next } = props.pageContext
     const subtitle = post.frontmatter.date
 
     return (
@@ -48,7 +67,6 @@ class BlogPostTemplate extends React.Component {
         <Bio />
       </Layout>
     )
-  }
 }
 
 export default BlogPostTemplate
@@ -58,7 +76,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        author
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {

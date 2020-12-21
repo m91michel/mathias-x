@@ -3,9 +3,20 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout/layout"
 import SEO from "../components/layout/seo"
 
-class PageTemplate extends React.Component {
-  render() {
-    const page = this.props.data.markdownRemark
+interface Props {
+  data: {
+    markdownRemark: {
+      html: string;
+      frontmatter: {
+        title: string;
+        description: string;
+      }
+    }
+  }
+}
+
+const PageTemplate: React.FC<Props> = (props) => {
+    const page = props.data.markdownRemark
 
     return (
       <Layout title={page.frontmatter.title}>
@@ -16,7 +27,6 @@ class PageTemplate extends React.Component {
         <div dangerouslySetInnerHTML={{ __html: page.html }} />
       </Layout>
     )
-  }
 }
 
 export default PageTemplate

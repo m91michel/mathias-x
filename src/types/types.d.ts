@@ -1,6 +1,8 @@
+// types.d.ts
 interface Post {
     excerpt: string
-    timeToRead: string;
+    timeToRead?: string;
+    id?: string;
     frontmatter: {
       title: string;
       date: string;

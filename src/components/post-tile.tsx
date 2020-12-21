@@ -4,15 +4,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faClock } from "@fortawesome/free-solid-svg-icons"
 
 type Props = {
-  title: string;
+  title?: string;
   link: string;
-  date: string;
-  timeToRead: string;
+  date?: string;
+  timeToRead?: string;
 }
 
 const PostTile = ({ title, link, date, timeToRead }: Props) => {
-  console.log(title);
-  
   return (
     <Fragment>
       <div className="column">
