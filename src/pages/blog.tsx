@@ -5,26 +5,37 @@ import Layout from "../components/layout/layout"
 import SEO from "../components/layout/seo"
 import PostTile from "../components/post-tile"
 
-class Blog extends React.Component {
-  render() {
-    const { data } = this.props
-    const posts = data.allMarkdownRemark.edges
+interface Props {
+  data: {
+    allMarkdownRemark: {
+      edges: {
+        node: Post
+      }[]
+    }
+    site: {
+      siteMetadata: {
+        title: string
+      }
+    }
+  }
+}
 
+const Blog: React.FC<Props>= ({ data }) => {
+    const posts = data.allMarkdownRemark.edges.map(({node}) => node)
+  
     return (
       <Layout title="Latest Posts">
         <SEO title="Blog" />
         <div style={{ margin: "20px 0 40px" }}>
-          {posts.map(({ node }) => {
-            const title = node.frontmatter.title || node.fields.slug
+          {posts.map((post: Post) => {
+            const title = post.frontmatter?.title || post.fields?.slug
             return (
-                <PostTile 
-                    key={node.fields.slug}
+                <PostTile
+                    key={post.fields?.slug}
                     title={title}
-                    link={`/blog${node.fields.slug}`}
-                    description={node.frontmatter.description}
-                    excerpt={node.excerpt}
-                    date={node.frontmatter.date}
-                    timeToRead={node.timeToRead}
+                    link={`/blog${post.fields?.slug}`}
+                    date={post.frontmatter?.date}
+                    timeToRead={post.timeToRead}
                 />
             )
           })}
@@ -32,7 +43,6 @@ class Blog extends React.Component {
         <Bio />
       </Layout>
     )
-  }
 }
 
 export default Blog

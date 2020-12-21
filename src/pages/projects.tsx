@@ -30,7 +30,7 @@ const projects = [
   },
 ];
 
-const Projects = () => {
+const Projects: React.FC = () => {
   const siteTitle = "Side Projects";
 
   return (
@@ -38,7 +38,7 @@ const Projects = () => {
       <SEO title={siteTitle} />
       <div className="columns is-multiline">
         {projects.map((project) => (
-          <div className="column is-half">
+          <div className="column is-half" key={project.link}>
             <Link href={project.link}>
               <div className="notification is-info">
                 <h1 className="has-text-white">{project.title}</h1>

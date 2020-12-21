@@ -3,20 +3,24 @@ import { navigate } from "gatsby-link";
 import Layout from "../components/layout/layout";
 import SEO from "../components/layout/seo";
 
-function encode(data) {
+type KeyValue = {
+  [key: string]: string
+}
+
+const encode = (data: KeyValue) => {
   return Object.keys(data)
     .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
     .join("&");
 }
 
-export default function Contact() {
+const Contact: React.FC = () => {
   const [state, setState] = React.useState({});
 
-  const handleChange = (e) => {
+  const handleChange = (e: any) => {
     setState({ ...state, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     const form = e.target;
     fetch("/", {
@@ -38,7 +42,7 @@ export default function Contact() {
       <SEO title={siteTitle} />
       <div className="columns">
         <div className="column is-one-third">
-          <lu>
+          <ul>
             <li>
               Twitter:{" "}
               <a
@@ -79,7 +83,7 @@ export default function Contact() {
                 Mathias Michel
               </a>
             </li>
-          </lu>
+          </ul>
         </div>
         <div className="column">
           <form
@@ -148,3 +152,4 @@ export default function Contact() {
     </Layout>
   );
 }
+export default Contact;

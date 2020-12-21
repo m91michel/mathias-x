@@ -24,8 +24,7 @@ const ImageContainer = styled.div`
   }
 `;
 
-class PageTemplate extends React.Component {
-  render() {
+const PageTemplate: React.FC = () => {
     return (
       <StaticQuery
         query={aboutQuery}
@@ -72,7 +71,6 @@ class PageTemplate extends React.Component {
         }}
       />
     );
-  }
 }
 
 export default PageTemplate;

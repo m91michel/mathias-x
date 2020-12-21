@@ -11,6 +11,8 @@ type Props = {
 }
 
 const PostTile = ({ title, link, date, timeToRead }: Props) => {
+  console.log(title);
+  
   return (
     <Fragment>
       <div className="column">
