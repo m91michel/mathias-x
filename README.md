@@ -2,4 +2,4 @@
   Personal blog of Mathias Michel
 </h1>
 
-Visit [wwww.mathias.rocks](https://www.mathias.rocks/) for more information
+Visit [www.mathias.rocks](https://www.mathias.rocks/) for more information
