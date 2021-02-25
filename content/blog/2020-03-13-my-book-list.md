@@ -27,3 +27,4 @@ This blog post is updated regularly and contains a list of books I have already 
 - [Schneller lesen - besser verstehen (Deutsch) Taschenbuch](https://www.amazon.de/Schneller-lesen-verstehen-Wolfgang-Schmitz/dp/3499630451) von Wolfgang Schmitz 
 - [Sorge dich nicht - lebe!](https://www.amazon.de/Sorge-dich-nicht-lebe-Carnegie/dp/3596190568/ref=sr_1_1?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=36MWZV75LJX72&dchild=1&keywords=sorge+dich+nicht+lebe&qid=1608716840&sprefix=sorge+d%2Caps%2C190&sr=8-1) von Dale Carnegie
 - [The Millionaire Fastlane: Crack the Code to Wealth](https://www.amazon.de/Millionaire-Fastlane-Crack-Wealth-Lifetime/dp/0984358102) von M. J. Demarco
+- [Atomic Habits: The life-changing million copy bestseller - James Clear ](https://www.amazon.de/s?k=atomic+habits&__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3KCXG7R4RY3PS&sprefix=atomic+ha%2Caps%2C192&ref=nb_sb_ss_ts-doa-p_1_9)
