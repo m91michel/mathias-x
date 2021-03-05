@@ -40,7 +40,7 @@
     "gatsby-remark-vscode": "^3.2.0",
     "gatsby-source-filesystem": "^2.11.0",
     "gatsby-transformer-remark": "^2.13.0",
-    "gatsby-transformer-sharp": "^2.9.0",
+    "gatsby-transformer-sharp": "^2.12.0",
     "netlify-cms-app": "^2.14.7",
     "node-sass": "^4.14.1",
     "react": "^17.0.0",
