@@ -4,7 +4,7 @@ module.exports = {
     author: `Mathias Michel`,
     description: `Personal Homepage of Mathias Michel.`,
     siteUrl: `https://mathias.rocks`,
-    bio: `Fullstack and iOS Developer | Interested in Tech, Blockchain, finance & politics`,
+    bio: `Fullstack Developer with focus on UI Code | Interested in Tech, Blockchain, finance & politics`,
     social: {
       twitter: `https://twitter.com/m91michel`,
       github: `https://github.com/m91michel`,
@@ -81,7 +81,7 @@ module.exports = {
           background_color: `#ffffff`,
           theme_color: `#663399`,
           display: `minimal-ui`,
-          icon: `content/assets/gatsby-icon.png`,
+          icon: `content/assets/logo.png`,
         },
       },
   ],
