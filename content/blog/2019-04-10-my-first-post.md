@@ -2,6 +2,7 @@
 title:  "My first post!"
 date:   "2019-04-10"
 description: Yeah! This is my first blog post.
+keywords: [my first post, blog, first]
 ---
 Yeah! Welcome to my first blog post! After a long time of thinking whether I should start my own blog and what topic should I address, I started and set up my new site [mathias.rocks].
 

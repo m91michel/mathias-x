@@ -1,6 +1,8 @@
 ---
 title: Overview of Interesting Blockchain Use Cases
 date: "2019-11-14"
+description: Overview of Interesting Blockchain Use Cases
+keywords: [blockchain, use cases, overview]
 ---
 
 Since 2017 I am interested in the topic Bitcoin and blockchain. Beside the investment possibility I find it exciting how Blockchain can be used and how the world of tomorrow can look like with it. In order to prepare a presentation, I have dealt with the topic in more detail and would now like to pass on my knowledge in a few blog posts. In this post I will first give an overview of the various use cases of a blockchain, in order to then explore the individual areas more deeply in further posts.

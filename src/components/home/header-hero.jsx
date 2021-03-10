@@ -35,11 +35,11 @@ class HeaderHero extends React.Component {
     return (
       <StaticQuery
         query={headerHeroQuery}
-        render={data => {
+        render={(data) => {
           const { author, social, bio } = data.site.siteMetadata;
           return (
             <header className="hero is-info is-medium is-bold">
-            <Navigation />
+              <Navigation />
 
               <div className="hero-body">
                 <div className="container">
@@ -57,7 +57,7 @@ class HeaderHero extends React.Component {
                       </h1>
                       <h2 className="subtitle">{bio}</h2>
                       <div className="subtitle">
-                        {socialButtons.map(socialItem => (
+                        {socialButtons.map((socialItem) => (
                           <a
                             key={socialItem.id}
                             href={social[socialItem.id]}

@@ -1,7 +1,8 @@
 ---
 title: How to transform text by a shortcut
 date: "2021-03-20"
-keywords: Automator, shortcut, macos, markdown
+description: My first drone video
+keywords: [Automator, shortcut, macos, markdown]
 ---
 
 Recently I've been copying links from interesting pages and then adding them to a Markdown document in my [knowledge repo](https://github.com/m91michel/knowledge). My workflow is that I always have to format the link accordingly. Here is an example how a link looks like in Markdown:
