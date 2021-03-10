@@ -8,8 +8,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: Build Gatsby Site
-      uses: jzweifel/gatsby-cli-github-action@master
+
+    - name: Set Node.js
+      uses: actions/setup-node@master
       with:
-        gatsby-arg: build
+        node-version: 14.x
+
+    - name: Install dependencies
+      run: yarn install --prod --pure-lockfile
+
+    - name: Build
+      run: yarn run build
 
