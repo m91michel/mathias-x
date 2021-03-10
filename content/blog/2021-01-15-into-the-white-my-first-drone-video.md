@@ -2,7 +2,7 @@
 title: Into The White - My first drone video
 date: "2021-01-15"
 description: My first drone video
-keywords: drone, shots
+keywords: [droneshot, into the white, drone video, DJI Mini 2]
 ---
 
 
