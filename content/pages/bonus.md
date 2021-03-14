@@ -8,18 +8,18 @@ Auf dieser Seite möchte ich Weiterempfehlungs-Links von unterschiedlichen Anbie
 Ich habe auch paar Seiten angegeben, bei denen nur ich einen Bonus erhalte (mit 🤷‍♂️ markiert). Diese Links musst du nur verwenden, wenn du etwas ❤️ schenken möchtest.
 
 ## Banking
-- [Vivid](https://vivid.money/r/mathias9MH) - Wir erhalten beide einen Bonus von 40€, sobald du für 20€ etwas gekauft hast.
+- [Vivid](https://vivid.money/r/mathias9MH) - Wir erhalten beide einen Bonus von 40€, sobald du für 20€ etwas gekauft hast. Der Bonus ändert sich öfters.
 - [N26](https://n26.com/r/mathiasm3438) - Benutze den code `mathiasm3438` und wir bekommen beide 15€
 - [TradeRepublik](https://ref.trade.re/9ndsz68z) - Wir erhalten beide 15€
 - [Scalable Capital](de.scalable.capital/einladung/b2f2fg) - Ich erhalte bis zu 50€ - Leider nur für mich 🤷‍♂️
 - [WeltSparen](www.weltsparen.de?p=eyJzIjoiVkZqZ3JhRGVrdVNlMldKcG1LX00tUVNvMGZBIiwidiI6MSwicCI6IntcInVcIjozMDEzOTc1NyxcInZcIjoxLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3d3dy53ZWx0c3BhcmVuLmRlXFxcL2t1bmRlbi13ZXJiZW5cXFwvP3V0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT10cmFuc2FjdGlvbmFsJnV0bV9jYW1wYWlnbj1tYW5kcmlsbF9kZS1yYWYtcmVjb21tZW5kYXRpb24tb2ZmZXJ0YWJsZVwiLFwiaWRcIjpcIjY1ZGY2NzA2ODBiYjRhYjhiOTU2ODE5YzU3ZWZjMjE2XCIsXCJ1cmxfaWRzXCI6W1wiNTlhYTFjNDcxZTNkZWMxNmI0YWE4OGY4MWEzYjJkYTU2YjA4NDFlNlwiXX0ifQ) - Wir bekommen beide 50€. Du musst aber 5000€ dort für 6 Monate bei einem Produkt hinterlegen.
 - [Bondora](https://bondora.com/ref/mathiasm10) - Du bekommst 5€ startguthaben und mein Bonus ist abhängig von deinem Investierten Betrag
-- [Mintos](https://www.mintos.com/de/l/ref/C60M64) - Bekommen beide eine Boni, abhängig von deinem Investierten Betrag
-- [Curve](https://www.curve.com/join#NV53K3PN) - Wir beide erhalten einen 5¢ Bonus
+- [Mintos](https://www.mintos.com/de/l/ref/C60M64) - Wir bekommen beide eine Boni, abhängig von deinem Investierten Betrag
+- [Curve](https://www.curve.com/join#NV53K3PN) - Wir beide erhalten einen 5¢ als Bonus
 
 ## Crypto
 - [Bitpanda](https://www.bitpanda.com/?ref=1744922665805272769) - Wir erhalten beide 10€, wenn du mind. 25€ tradest.
-- [Bitwala](https://app.bitwala.com/r/MBVJ-89RF) - Wir erhalten beide 15€ nachdem du deinen ersten Trade machst
+- [Bitwala](https://app.bitwala.com/r/MBVJ-89RF) - Wir erhalten beide 15€ nachdem du deinen ersten Trade.
 - [Crypto.com](https://crypto.com/app/byjhe4vd6c) - Wir bekommen beide $25 USD, wenn du 2500 CRO stakest.
 - [Bitwala](https://app.bitwala.com/r/MBVJ-89RF) - Wir erhalten beide 15€
 - [Pool by Cake](https://pool.cakedefi.com/#?ref=624360) - Wir erhalten beide einen 10 USD Bonus
