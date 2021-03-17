@@ -44,7 +44,7 @@
     "gatsby-remark-vscode": "^3.2.0",
     "gatsby-source-filesystem": "^3.0.0",
     "gatsby-transformer-remark": "^3.0.0",
-    "gatsby-transformer-sharp": "^3.0.0",
+    "gatsby-transformer-sharp": "^3.1.0",
     "node-sass": "^5.0.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
