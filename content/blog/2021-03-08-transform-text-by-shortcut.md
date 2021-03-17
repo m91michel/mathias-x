@@ -45,5 +45,7 @@ The final step is to configure a shortcut which executes the workflow.
 2. Search by your workflow name and configure a key combination e.g. `^` + `ALt` + `CMD` + `C`
 
 ## Further ideas
-- You can use approach to run any script for example post data to webhook.
-- 
+- You can build an army of formating helper functions.
+- Something I want to improve is for example to add a menu where I can select between different options.
+- You can use this approach to run any code. I use this for sending a selected url to a webhook which then triggers a n8n workflow.
+- Or you can just use the given functionality of automator to manipulate images.
