@@ -3,7 +3,7 @@ title: Meine Bonus-Programme-Liste
 template: page
 ---
 
-Auf dieser Seite möchte ich Weiterempfehlungs-Links von unterschiedlichen Anbietern wie N26 oder Emmy teilen, wo es für uns beide einen Bonus gibt. Du möchtest dich zum Beispiel bei einen von diesen Diensten anmelden, kannst du das über meinen Link machen und kannst somit einen Bonus abstauben. Ich habe bei jedem Dienst jeweils angegeben welcher Bonus vergeben wird und letztendlich kannst du für dich entscheiden ob du diesen nutzen möchtest oder nicht.
+Auf dieser Seite möchte ich Weiterempfehlungs-Links von unterschiedlichen Anbietern wie N26 oder Emmy teilen, wo es für uns beide einen Bonus gibt. Du möchtest dich zum Beispiel bei einen von diesen Diensten anmelden, kannst du das über meinen Link machen und kannst somit einen Bonus abstauben. Ich habe bei jedem Dienst jeweils angegeben welcher Bonus vergeben wird und letztendlich kannst du für dich entscheiden ob du diesen nutzen möchtest oder nicht. [Hier findest du eine genauer Beschreibung (English)]()
 
 Ich habe auch paar Seiten angegeben, bei denen nur ich einen Bonus erhalte (mit 🤷‍♂️ markiert). Diese Links musst du nur verwenden, wenn du etwas ❤️ schenken möchtest.
 

@@ -1,6 +1,6 @@
 ---
 title: How to transform text by a shortcut
-date: "2021-03-20"
+date: "2021-03-08"
 description: My first drone video
 keywords: [Automator, shortcut, macos, markdown]
 ---
