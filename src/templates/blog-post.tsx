@@ -16,6 +16,7 @@ interface Props {
         date: string;
         description: string;
         keywords: string[];
+        tags: string[];
       }
     }
     site: {
@@ -32,7 +33,7 @@ const BlogPostTemplate: React.FC<Props> = (props) => {
     const subtitle = post.frontmatter.date
 
     return (
-      <Layout title={post.frontmatter.title} subtitle={subtitle}>
+      <Layout title={post.frontmatter.title} subtitle={subtitle} tags={post.frontmatter.tags}>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
@@ -89,6 +90,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         keywords
+        tags
       }
     }
   }
