@@ -11,13 +11,7 @@ interface Props {
       id: string;
       excerpt: string;
       html: string;
-      frontmatter: {
-        title: string;
-        date: string;
-        description: string;
-        keywords: string[];
-        tags: string[];
-      }
+      frontmatter: Frontmatter
     }
     site: {
       siteMetadata: {
