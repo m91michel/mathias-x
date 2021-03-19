@@ -3,8 +3,7 @@ title: "Why I created a referral page?"
 date: "2021-03-21"
 description: "Why I created a referral page?"
 keywords: [bonus page, referral links]
-tags:
-  - personal
+tags: [personal]
 ---
 
 ## The problem with referral links

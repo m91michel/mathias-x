@@ -3,8 +3,7 @@ title: 3 Lessons I learned during the corona crisis
 date: "2020-04-30"
 description: 3 Lessons I learned during the corona crisis
 keywords: [lessons learned, corona, opportunities]
-tags:
-  - personal
+tags: [personal]
 ---
 
 The Corona crisis is the worst economic crisis [since World War 2] and no one can yet know what economic effects we will see. Today I don't want to talk about the negative consequences, but about my three lessons I have learned from the crisis.

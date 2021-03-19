@@ -3,8 +3,7 @@ title: My Book Reading List
 date: "2020-03-13"
 description: My first drone video
 keywords: [my reading list, books, learning]
-tags:
-  - personal
+tags: [personal]
 ---
 
 This blog post is updated regularly and contains a list of books I have already read or books that are on my todo list. The given links all lead to Amazon.(Last update 19-02-2021)

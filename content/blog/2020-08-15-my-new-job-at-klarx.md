@@ -3,8 +3,7 @@ title: "My new Job at Klarx!"
 date: "2020-08-15"
 description: "My new Job at Klarx!"
 keywords: ["new job", news, klarx, developer]
-tags:
-  - personal
+tags: [personal]
 ---
 
 I have a career news to announce. I have started a new job as a frontend developer at [Klarx]. On Monday I will have my first day and I am already very excited about the new challenges waiting for me.
