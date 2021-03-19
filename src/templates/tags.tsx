@@ -24,8 +24,8 @@ const Blog: React.FC<Props> = ({ data }) => {
   const posts = data.allMarkdownRemark.edges.map(({ node }) => node);
 
   return (
-    <Layout title="Latest Posts">
-      <SEO title="Blog" />
+    <Layout title="Posts for Tag">
+      <SEO title="Posts for Tag..." />
       <div style={{ margin: "20px 0 40px" }}>
         {posts.map((post: Post) => {
           const title = post.frontmatter?.title || post.fields?.slug;
