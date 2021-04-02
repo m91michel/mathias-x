@@ -7,10 +7,7 @@ interface Props {
   data: {
     markdownRemark: {
       html: string;
-      frontmatter: {
-        title: string;
-        description: string;
-      }
+      frontmatter: Frontmatter;
     }
   }
 }
