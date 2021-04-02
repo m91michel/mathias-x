@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import Navigation from "./navigation";
 import Footer from "./footer";
+import Tag from "../tag";
 
 type Props = {
   title: string;
@@ -18,16 +19,15 @@ const Layout: React.FC<Props> = ({ title, subtitle, children, tags }) => {
 
       <div className="hero-body">
         <div className="container has-text-centered">
+          <h1 className="title" style={{ marginBottom: '0.5rem' }}>{title}</h1>
+          <div>
+          {subtitle && <span className="subtitle">{subtitle}</span>}
           {tags && (
             <div>
-              {tags?.map((tag) => (
-                <span className="tag is-link">#{tag}</span>
-                ))}
+              {tags?.map((tag) => <Tag tag={tag}/>)}
             </div>
           )}
-          <h1 className="title">{title}</h1>
-          {subtitle && <h2 className="subtitle">{subtitle}</h2>}
-          <div></div>
+          </div>
         </div>
       </div>
     </header>
