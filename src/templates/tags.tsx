@@ -18,14 +18,18 @@ interface Props {
       };
     };
   };
+  pageContext: {
+    tag: string;
+  }
 }
 
-const Blog: React.FC<Props> = ({ data }) => {
+const Blog: React.FC<Props> = ({ data, pageContext: { tag }, ...other }) => {
   const posts = data.allMarkdownRemark.edges.map(({ node }) => node);
+  const title = `Posts for #${tag}`;
 
   return (
-    <Layout title="Posts for Tag">
-      <SEO title="Posts for Tag..." />
+    <Layout title={title}>
+      <SEO title={title} />
       <div style={{ margin: "20px 0 40px" }}>
         {posts.map((post: Post) => {
           const title = post.frontmatter?.title || post.fields?.slug;
