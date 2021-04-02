@@ -4,7 +4,7 @@ module.exports = {
     author: `Mathias Michel`,
     description: `Personal Homepage of Mathias Michel.`,
     siteUrl: `https://mathias.rocks`,
-    bio: `Fullstack Developer with focus on UI Code | Interested in Tech, Blockchain, finance & politics`,
+    bio: `Fullstack Developer with focus on UI Code | Personal Blog, Software Development and Blockchain`,
     social: {
       twitter: `https://twitter.com/m91michel`,
       github: `https://github.com/m91michel`,
