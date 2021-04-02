@@ -1,6 +1,4 @@
 import React, { Fragment, ReactNode } from "react";
-import styled from "styled-components";
-
 import Navigation from "./navigation";
 import Footer from "./footer";
 import Tag from "../tag";
@@ -36,24 +34,14 @@ const Layout: React.FC<Props> = ({ title, subtitle, children, tags }) => {
   return (
     <Fragment>
       <header>{header}</header>
-      <Wrapper>
+      <main className="min-h-2/4 max-w-screen-xl mx-auto my-0 px-4 lg:px-0">
         <section>
           <div className="container content">{children}</div>
         </section>
-      </Wrapper>
+      </main>
       <Footer />
     </Fragment>
   );
 };
-
-const Wrapper = styled.main`
-  min-height: 50vh;
-  max-width: 1024px;
-  margin: 0 auto;
-
-  @media (max-width: 1024px) {
-    padding: 0 20px;
-  }
-`;
 
 export default Layout;

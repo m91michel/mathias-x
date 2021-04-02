@@ -5,17 +5,21 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
-import styled from "styled-components"
+import React, { ReactNode } from "react";
+import { StaticQuery, graphql } from "gatsby";
+import Image from "gatsby-image";
+
+type Props = {
+  children: ReactNode;
+};
+const Container: React.FC<Props> = ({ children }) => <div className="flex max-w-screen-sm mx-auto my-0">{children}</div>;
 
 function Bio() {
   return (
     <StaticQuery
       query={bioQuery}
-      render={data => {
-        const { author, social } = data.site.siteMetadata
+      render={(data) => {
+        const { author, social } = data.site.siteMetadata;
         return (
           <Container>
             <article className="media">
@@ -33,8 +37,7 @@ function Bio() {
               <div className="media-content">
                 <div className="content">
                   <p>
-                    Written by <strong>{author}</strong> who lives and works in
-                    Munich building useful things.
+                    Written by <strong>{author}</strong> who lives and works in Munich building useful things.
                     {` `}
                     <a href={`${social.twitter}`} target="_blank" rel="noopener noreferrer">
                       Follow me on Twitter
@@ -44,10 +47,10 @@ function Bio() {
               </div>
             </article>
           </Container>
-        )
+        );
       }}
     />
-  )
+  );
 }
 
 const bioQuery = graphql`
@@ -68,12 +71,6 @@ const bioQuery = graphql`
       }
     }
   }
-`
+`;
 
-const Container = styled.div`
-  display: flex;
-  max-width: 500px;
-  margin: 0 auto;
-`
-
-export default Bio
+export default Bio;

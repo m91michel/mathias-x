@@ -1,28 +1,9 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import Image from "gatsby-image";
-import styled from "styled-components";
 import Layout from "../components/layout/layout";
 import SEO from "../components/layout/seo";
 import Link from "../components/general/Link";
-
-const SplitContainer = styled.div`
-  @media (min-width: 768px) {
-    display: flex;
-  }
-`;
-const TextContainer = styled.div`
-  @media (min-width: 768px) {
-    flex: 2;
-    padding-right: 20px;
-  }
-`;
-const ImageContainer = styled.div`
-  flex: 1;
-  @media (max-width: 768px) {
-    margin-top: 20px;
-  }
-`;
 
 const PageTemplate: React.FC = () => {
     return (
@@ -37,8 +18,8 @@ const PageTemplate: React.FC = () => {
           return (
             <Layout title="Who I am?">
               <SEO title={title} description={description} />
-              <SplitContainer>
-                <TextContainer>
+              <div className="md:flex">
+                <div className="md:flex-2 md:pr-5">
                   <p>
                     Hi there! My name is Mathias Michel and I am a Software
                     Developer specialized to Mobile and Web Frontend
@@ -58,14 +39,14 @@ const PageTemplate: React.FC = () => {
                     You can use the <a href="/contact/">contact form</a> or you
                     can find me on <a href={social.github}>Github</a>, <a href={social.linkedIn}>LinkedIn</a> or <a href={social.xing}>Xing</a>
                   </p>
-                </TextContainer>
-                <ImageContainer>
+                </div>
+                <div className="flex-1 md:flex-1 max-md:pt-5 md:pt-0">
                   <Image
                     fixed={data.aboutImage.childImageSharp.fixed}
                     alt="Thats me"
                   />
-                </ImageContainer>
-              </SplitContainer>
+                </div>
+              </div>
             </Layout>
           );
         }}
