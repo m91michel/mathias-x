@@ -27,7 +27,7 @@
     "gatsby-image": "^3.4.0",
     "gatsby-plugin-feed": "^3.2.0",
     "gatsby-plugin-google-analytics": "^3.2.0",
-    "gatsby-plugin-manifest": "^3.2.0",
+    "gatsby-plugin-manifest": "^3.4.0",
     "gatsby-plugin-markdown-pages": "^1.0.3",
     "gatsby-plugin-offline": "^4.2.0",
     "gatsby-plugin-postcss": "^4.2.0",
