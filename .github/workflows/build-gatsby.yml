@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-on: push
+on: [push, pull_request]
 name: Build Gatsby Site
 jobs:
   build:
@@ -31,4 +31,13 @@ jobs:
 
     - name: Build
       run: yarn run build
+   
+   automerge:
+    needs: build
+    if: github.actor == 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: fastify/github-action-merge-dependabot@v2.0.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
