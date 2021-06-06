@@ -31,8 +31,8 @@ jobs:
 
     - name: Build
       run: yarn run build
-   
-   automerge:
+
+  automerge:
     needs: build
     if: github.actor == 'dependabot[bot]'
     runs-on: ubuntu-latest
